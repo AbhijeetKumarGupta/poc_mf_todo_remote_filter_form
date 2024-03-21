@@ -17,7 +17,8 @@ const STD_STATUS_RADIO_OPTIONS = {
   },
 }
 
-function FilterSection() {
+function FilterSection(props) {
+    const { handleFilterApplied } = props
     const [searchText, setSearchText] = useState("");
     const [status, setStatus] = useState("");
 
@@ -30,8 +31,8 @@ function FilterSection() {
       setStatus(value)
     }
 
-    const handleSearch = () => {
-
+    const handleSearch = (e) => {
+      handleFilterApplied(e, searchText, status)
     }
     
     return (
