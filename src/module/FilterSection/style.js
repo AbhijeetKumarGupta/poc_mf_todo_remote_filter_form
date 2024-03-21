@@ -5,8 +5,6 @@ export const FilterFormContainer = styled.form`
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
     color: white;
     gap: 15px;

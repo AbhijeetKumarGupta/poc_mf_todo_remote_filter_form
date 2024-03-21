@@ -34,7 +34,7 @@ module.exports = {
       name: 'filterSection',
       filename: 'remoteEntry.js',
       exposes: {
-        './index': './src/App',
+        './filterSection': './src/module/FilterSection',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
